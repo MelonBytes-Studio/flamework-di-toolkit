@@ -1,5 +1,5 @@
 {
-	"name": "my-library-dev",
+	"name": "flamework-di-toolkit",
 	"globIgnorePaths": ["**/tsconfig.json", "**/package.json", "**/package-lock.json"],
 
 	"tree": {
@@ -13,6 +13,10 @@
 
 				"@rbxts": {
 					"$path": "node_modules/@rbxts"
+				},
+
+				"@flamework": {
+					"$path": "node_modules/@flamework"
 				}
 			},
 
