@@ -1,0 +1,36 @@
+{
+	"version": 1,
+	"flameworkVersion": "1.2.3",
+	"identifiers": {
+		"@rbxts/flamework-di-toolkit:out/container@DependencyContainer": "$mb:container@DependencyContainer",
+		"@rbxts/flamework-di-toolkit:out/tests/basic.spec@Test": "$mb:tests/basic.spec@Test",
+		"@rbxts/flamework-di-toolkit:out/tests/dependency-service@DependencyService": "$mb:tests/dependency-service@DependencyService",
+		"@rbxts/flamework-di-toolkit:out/tests/test-service@TestService": "$mb:tests/test-service@TestService",
+		"@rbxts/flamework-di-toolkit:out/tests/basic.spec@Version": "$mb:tests/basic.spec@Version",
+		"@rbxts/flamework-di-toolkit:out/tests/test-service@Version": "$mb:tests/test-service@Version"
+	},
+	"metadata": {},
+	"identifierPrefix": "$mb",
+	"classes": [
+		{
+			"filePath": "out\\tests\\dependency-service.lua",
+			"internalId": "$mb:tests/dependency-service@DependencyService",
+			"decorators": [
+				{
+					"internalId": "$:flamework@Service",
+					"name": "Service"
+				}
+			]
+		},
+		{
+			"filePath": "out\\tests\\test-service.lua",
+			"internalId": "$mb:tests/test-service@TestService",
+			"decorators": [
+				{
+					"internalId": "$:flamework@Service",
+					"name": "Service"
+				}
+			]
+		}
+	]
+}
