@@ -1,7 +1,7 @@
 {
-  "name": "@rbxts/my-library",
+  "name": "@rbxts/flamework-di-toolkit",
   "version": "1.0.0",
-  "description": "My description",
+  "description": "Library that buffs flamework dependency injection system",
   "main": "out/init.luau",
   "type": "module",
   "typings": "out/index.d.ts",
@@ -9,6 +9,7 @@
     "out",
     "README.md",
     "!out/tests",
+	"flamework.build",
     "!**/*.tsbuildinfo"
   ],
   "publishConfig": {
@@ -16,9 +17,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "github repo"
+    "url": "https://github.com/MelonBytes-Studio/flamework-di-toolkit.git"
   },
-  "homepage": "readme",
+  "homepage": "https://github.com/MelonBytes-Studio/flamework-di-toolkit#README",
   "scripts": {
     "build": "rbxtsc",
     "devBuild": "rbxtsc --type game --rojo dev.project.json",
