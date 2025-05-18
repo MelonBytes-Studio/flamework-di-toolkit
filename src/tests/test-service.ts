@@ -6,9 +6,9 @@ export type Version = string;
 
 @Service()
 export class TestService {
-	@Inject
+	@Inject()
 	public dependencyService!: DependencyService;
 
-	@Inject
+	@Inject()
 	public version!: Version;
 }

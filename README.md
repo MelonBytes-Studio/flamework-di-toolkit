@@ -18,7 +18,7 @@ first thing you need to do is to mark fields you need to inject
 export type Version = string;
 
 export class MyClass {
-	@Inject
+	@Inject()
 	public version: Version;
 }
 ```

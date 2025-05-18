@@ -28,6 +28,12 @@ export class DependencyContainer {
 		});
 	}
 
+	public extend(container: DependencyContainer) {
+		this.insertDefaultResolver((dependency) => {
+			return container.resolve(dependency as never);
+		});
+	}
+
 	/** @metadata macro */
 	public registerFactory<T>(factory: () => T, dependency?: IntrinsicSymbolId<T>) {
 		assert(dependency, "Failed to get dependency id, looks like flamework bug.");

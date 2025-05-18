@@ -1,9 +1,13 @@
 import { Modding, Reflect } from "@flamework/core";
 
-/** @metadata reflect flamework:type */
-export function Inject(target: object, propertyKey: string) {
-	const propertyType = Reflect.getMetadata<string>(target, "flamework:type", propertyKey);
-	assert(propertyType !== undefined, `Property type is undefined, property "${propertyKey}" can't be injected.`);
+/** @metadata flamework:type */
+export const Inject = Modding.createDecorator("Property", (descriptor) => {
+	const propertyType = Reflect.getMetadata<string>(descriptor.object, "flamework:type", descriptor.property);
 
-	Reflect.defineMetadata(target, "mb:inject", propertyType, propertyKey);
-}
+	assert(
+		propertyType !== undefined,
+		`Property type is undefined, property "${descriptor.property}" can't be injected.`,
+	);
+
+	Reflect.defineMetadata(descriptor.object, "mb:inject", propertyType, descriptor.property);
+});

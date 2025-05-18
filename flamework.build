@@ -7,11 +7,17 @@
 		"@rbxts/flamework-di-toolkit:out/tests/dependency-service@DependencyService": "$mb:tests/dependency-service@DependencyService",
 		"@rbxts/flamework-di-toolkit:out/tests/test-service@TestService": "$mb:tests/test-service@TestService",
 		"@rbxts/flamework-di-toolkit:out/tests/basic.spec@Version": "$mb:tests/basic.spec@Version",
+		"@rbxts/flamework-di-toolkit:out/decorator@Inject": "$mb:decorator@Inject",
 		"@rbxts/flamework-di-toolkit:out/tests/test-service@Version": "$mb:tests/test-service@Version"
 	},
 	"metadata": {},
 	"identifierPrefix": "$mb",
 	"classes": [
+		{
+			"filePath": "out\\tests\\basic.spec.lua",
+			"internalId": "$mb:tests/basic.spec@Test",
+			"decorators": []
+		},
 		{
 			"filePath": "out\\tests\\dependency-service.lua",
 			"internalId": "$mb:tests/dependency-service@DependencyService",

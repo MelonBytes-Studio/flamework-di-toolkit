@@ -20,7 +20,7 @@ export = function () {
 		container.register<Version>({ id: 1 });
 
 		class Test {
-			@Inject
+			@Inject()
 			public version!: Version;
 		}
 
@@ -35,7 +35,7 @@ export = function () {
 		container.register<Version>({ id: 1 });
 
 		class Test {
-			@Inject
+			@Inject()
 			public version!: Version;
 		}
 
