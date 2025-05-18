@@ -25,7 +25,7 @@
     "devBuild": "rbxtsc --type game --rojo dev.project.json",
     "devWatch": "rbxtsc --watch --type game --rojo dev.project.json",
     "serve": "rojo serve dev.project.json",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "pnpm run build"
   },
   "keywords": [],
   "author": "sumer_real",
